@@ -1,0 +1,16 @@
+
+datos_dashboard/bin/
+datos_dashboard/include/
+datos_dashboard/lib/
+datos_dashboard/lib64/
+datos_dashboard/pyvenv.cfg
+datos_dashboard/share/
+dashboard/etc/
+datos_dashboard/=0.5.3,
+datos_dashboard/3
+datos_dashboard/9
+datos_dashboard/17
+datos_dashboard/20
+datos_dashboard/31
+datos_dashboard/48
+datos_dashboard/bokeh
