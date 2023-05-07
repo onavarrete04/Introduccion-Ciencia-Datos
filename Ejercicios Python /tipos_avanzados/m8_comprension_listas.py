@@ -24,4 +24,10 @@ print(nombres4)
 
 # metodo map y filter
 
-nombres = list(map(lambda: usuario usuario[0], usuarios3))
+nombres = list(map(lambda usuario: usuario[0], usuarios3))
+print("map: ", nombres)
+
+# filter
+
+menos_usuarios = list(filter(lambda usuario: usuario[1] > 2, usuarios3))
+print("filter", menos_usuarios)
