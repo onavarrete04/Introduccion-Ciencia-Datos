@@ -1,0 +1,49 @@
+Hola, esto es una prueba
+
+
+
+Introducción
+Novo livro prático para aprender P...
+
+Pause
+
+Unmute
+Remaining Time -9:57
+
+
+Fullscreen
+Novo livro prático para aprender Python
+A partir de hoy, Python 3.11 es la última versión disponible para la instalación. Los desarrolladores de Python que quieran comenzar a crear una nueva aplicación deben usar la última versión. Este tutorial lo ayudará a instalar Python 3.11 en sistemas Ubuntu. En esta guía, discutiremos dos métodos para instalar Python en Ubuntu, el primer método instalará Python usando PPA y el segundo método compilará Python desde el código fuente.
+
+requisitos previos
+Los paquetes de Python y la instalación del código fuente requerían dependencias para instalarse en el sistema. La compilación del código fuente requería varias bibliotecas de compilación en el sistema. Ejecute los siguientes comandos para instalar los paquetes necesarios en su sistema:
+
+
+sudo apt install build-essential checkinstall \
+ libreadline-gplv2-dev libncursesw5-dev libssl-dev \
+ libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+Instalar Python en Ubuntu
+Elija uno de los siguientes métodos para instalar Python 3.11 en un sistema Ubuntu. Recomendamos usar el primer método, pero si en caso de que no funcione, vaya con el segundo método.
+
+Instale Python 3.11 a través de PPA
+
+Las últimas versiones de Python están disponibles en el PPA del equipo de ~deadsnakes. Puede agregar este PPA a su sistema Ubuntu con el siguiente comando:
+
+sudo add-apt-repository ppa:deadsnakes/ppa
+Luego puede instalar Python 3.11 usando el administrador de paquetes apt-get:
+
+sudo apt install python3.11
+Esto instalará Python 3.11 en su sistema Linux.
+
+Instale Python 3.11 usando el código fuente
+Si el repositorio no contiene los paquetes de Python para su sistema, instálelo compilándolo desde el código fuente:
+
+Descargue el código fuente de Python 3.11: la versión de Python 3.11.1 está disponible para su instalación. Puede visitar los sitios web oficiales de Python para comprobar la última versión disponible. Use los siguientes comandos para descargar el código fuente de Python 3.11:
+
+
+cd /usr/src
+sudo wget https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tgz
+Extraer archivo: una vez completada la descarga, extraiga el contenido del archivo.
+
+sudo tar xzf Python-3.11.1.tgz
+Prepare el código fuente: ahora prepare su código fuente de acuerdo con la arquitectura y el entorno de su sistema. Además, use la opción --enable-optimizations con el comando configure para habilitar soportes adicionales como SSL, soporte bz2:
