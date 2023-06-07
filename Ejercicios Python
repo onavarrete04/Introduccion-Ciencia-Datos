@@ -1,0 +1,40 @@
+def hourglassSum(arr):
+    lista = []
+    sub_lista1 = []
+    sub_lista2 = []
+    mayor = 0
+
+    for i in range(len(arr)):
+        sub_lista1.append(sum(arr[i][i:3]))
+        sub_lista2.append(sum(i[3:6]))
+        if len(sub_lista1) == 3:
+            lista.append(sub_lista1)
+            lista.append(sub_lista2)
+            sub_lista1 = []
+            sub_lista2 = []
+    for i in lista:
+        if sum(i) > mayor:
+            mayor = sum(i)
+    
+    print(lista)
+    return mayor
+
+a = [
+    [1, 1, 1, 0, 0, 0],
+    [0, 1, 0, 0, 0, 0],
+    [1, 1, 1, 0, 0, 0],
+    [0, 0, 2, 4, 4, 0],
+    [0, 0, 0, 2, 0, 0],
+    [0, 0, 1, 2, 4, 0]
+]
+
+#hourglassSum(a)
+def hourglassSum(arr):
+    # Write your code here
+    ans = []
+    for i in range(1,5):
+        for j in range(1,5):
+            ans.append(arr[i-1][j-1]+arr[i-1][j]+arr[i-1][j+1]+arr[i][j]+arr[i+1][j-1]+arr[i+1][j]+arr[i+1][j+1])
+    return ans
+print(
+hourglassSum(a))
